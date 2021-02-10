@@ -1,34 +1,11 @@
-import { AppProps } from "next/dist/next-server/lib/router/router";
-import Link from "next/link";
+import type { AppProps } from "next/app";
+import Sidebar from "../components/sidebar";
 import "../styles/globals.css";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function Revyus({ Component, pageProps }: AppProps) {
   return (
     <div>
-      <div>
-        <ul>
-          <li>
-            <Link href="/">
-              <a>Revyus</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/reports">
-              <a>Reports</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/workspaces">
-              <a>Workspaces</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/settings">
-              <a>Settings</a>
-            </Link>
-          </li>
-        </ul>
-      </div>
+      <Sidebar />
       <div>
         <Component {...pageProps} />
       </div>
@@ -36,4 +13,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default MyApp;
+export default Revyus;
