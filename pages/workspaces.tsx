@@ -1,13 +1,13 @@
 import Head from "next/head";
 
-export default function Home() {
+export default function Workspaces() {
   return (
     <div>
       <Head>
-        <title>Revyus</title>
+        <title>Revyus - Workspaces</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>Home</div>
+      <div>Workspaces</div>
     </div>
   );
 }
