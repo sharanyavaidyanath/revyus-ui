@@ -1,6 +1,6 @@
 import type { AppProps } from "next/app";
 import Sidebar from "../components/sidebar";
-import "../styles/globals.css";
+import "tailwindcss/tailwind.css";
 
 function Revyus({ Component, pageProps }: AppProps) {
   return (
