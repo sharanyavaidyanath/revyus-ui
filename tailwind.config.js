@@ -7,6 +7,9 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
+      boxShadow: {
+        sidebar: "3px 0px 3px 0 rgba(0, 0, 0, 0.4)",
+      },
     },
   },
   variants: {

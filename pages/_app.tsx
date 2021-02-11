@@ -4,9 +4,9 @@ import "tailwindcss/tailwind.css";
 
 function Revyus({ Component, pageProps }: AppProps) {
   return (
-    <div className="flex h-screen">
+    <div className="grid grid-cols-1  md:flex h-screen bg-gray-100">
       <Sidebar />
-      <div className="flex-grow bg-yellow-100 h-screen overflow-y-auto">
+      <div className="col-span-full row-span-full md:flex-grow h-screen overflow-y-auto text-black p-3">
         <Component {...pageProps} />
       </div>
     </div>
