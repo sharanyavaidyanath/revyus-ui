@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import Sidebar from "../components/sidebar";
 import "tailwindcss/tailwind.css";
+import SELECTOR from "../components/selector";
 
 function Revyus({ Component, pageProps }: AppProps) {
   return (
@@ -10,6 +11,8 @@ function Revyus({ Component, pageProps }: AppProps) {
       <div className="col-span-full row-span-full md:flex-grow h-screen overflow-y-auto text-gray-900 p-3 bg-gray-200">
         <Component {...pageProps} />
       </div>
+
+      <SELECTOR />
     </div>
   );
 }

@@ -9,6 +9,7 @@ module.exports = {
       },
       boxShadow: {
         sidebar: "3px 0px 3px 0 rgba(0, 0, 0, 0.4)",
+        selector: "0px 3px 3px 3px rgba(0, 0, 0, 0.4)"
       },
     },
   },
